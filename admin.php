@@ -94,10 +94,16 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
         Name: <input type="text" name="name" required><br><br>
         Category:
         <select name="category">
+            <option value="">All Instruments</option>
+            <option value="Clarinet">Clarinet</option>
+            <option value="Drums">Drums</option>
+            <option value="Flutes">Flutes</option>
             <option value="Guitars">Guitars</option>
             <option value="Keyboards">Keyboards</option>
-            <option value="Drums">Drums</option>
-            <option value="Audio Gear">Audio Gear</option>
+            <option value="Trumpts">Trumpts</option>
+            <option value="Trombone">Trombone</option>
+            <option value="Saxaphone">Saxophone</option>
+            <option value="Violin">Violin</option>
         </select><br><br>
         Description:<br>
         <textarea name="description" required></textarea><br><br>
