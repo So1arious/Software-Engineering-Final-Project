@@ -39,10 +39,15 @@ $result = mysqli_query($conn, $sql);
     Filter by Category:
     <select name="category">
         <option value="">All Instruments</option>
+        <option value="Clarinet">Clarinet</option>
+        <option value="Drums">Drums</option>
+        <option value="Flutes">Flutes</option>
         <option value="Guitars">Guitars</option>
         <option value="Keyboards">Keyboards</option>
-        <option value="Drums">Drums</option>
-        <option value="Audio Gear">Audio Gear</option>
+        <option value="Trumpts">Trumpts</option>
+        <option value="Trombone">Trombone</option>
+        <option value="Saxaphone">Saxophone</option>
+        <option value="Violin">Violin</option>
     </select>
     <input type="submit" value="Filter">
 </form>
