@@ -16,7 +16,7 @@ $sql = "INSERT INTO orders (id, customer_name, customer_email, shipping_address,
   VALUES (123456,'Roxas'.'Roxas@customer.com','12 street', 'Guitar (x1)', 299.99, 30.00, 329.99)";
   
 if (mysqli_query($conn, $sql)) {
-echo "New record created successfully";
+echo "New Purchase created successfully";
 } else {
   echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
