@@ -21,7 +21,7 @@
 		customer_name VARCHAR(50) NOT NULL,
 		customer_email VARCHAR(50) NOT NULL,
 		shipping_address TEXT NOT NULL,
-    		order_details TEXT NOT NULL,
+    	order_details TEXT NOT NULL,
 		subtotal DECIMAL(10,2) NOT NULL,
 		tax DECIMAL(10,2) NOT NULL,
 		total DECIMAL(10,2) NOT NULL,
