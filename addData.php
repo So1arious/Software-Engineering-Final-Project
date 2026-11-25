@@ -12,8 +12,8 @@ if (!$conn) {
   die("Connection failed:" .mysqli_connect_error());
 }
 
-$sql = "INSERT INTO orders (id, customer_name, customer_email, shipping_address, order_details, subtotal, tax, total, order_date)
-  VALUES (123456,'Roxas'.'Roxas@customer.com','12 street', 'Guitar (x1)', 299.99, 30.00, 329.99)";
+$sql = "INSERT INTO orders (customer_name, customer_email, shipping_address, order_details, subtotal, tax, total)
+  VALUES ('Roxas','Roxas@customer.com','12 street', 'Guitar (x1)', 299.99, 30.00, 329.99)";
   
 if (mysqli_query($conn, $sql)) {
 echo "New Purchase created successfully";
