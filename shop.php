@@ -21,6 +21,7 @@ $result = mysqli_query($conn, $sql);
 <body>
 
 <div class="nav">
+    <a href="https://www.fontspace.com/category/music"><img src="https://see.fontimg.com/api/rf5/aAzK/ZjQyYmFjMGI5YWI1NDlhYzgwYTVlNjJjMzEyNjk1OTUudHRm/U29sZmVnZSBNdXNpYyBTaG9w/alphamusicman.png?r=fs&h=65&w=1000&fg=000000&bg=FFFFFF&tb=1&s=65" alt="Music fonts"></a>
     <a href="shop.php">Shop</a>
     <a href="cart.php">Cart (<?php echo isset($_SESSION['cart']) ? array_sum($_SESSION['cart']) : 0; ?>)</a>
     <a href="admin.php">Admin Login</a>
