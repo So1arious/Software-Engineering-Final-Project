@@ -2,6 +2,7 @@
 session_start();
 include('connect.php');
 
+
 // Filter by category using $_GET (Lecture: PHP SQL Data Filtering)
 if (isset($_GET['category']) && $_GET['category'] != "") {
     $category = mysqli_real_escape_string($conn, $_GET['category']);
@@ -12,6 +13,17 @@ if (isset($_GET['category']) && $_GET['category'] != "") {
 
 $result = mysqli_query($conn, $sql);
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Instrument Shop</title>
+    <link rel="stylesheet" href="../Frontend/style.css">
+</head>
+<body>
+
+<a href="../Frontend/shop_page.html">&larr; Back to Home</a>
+<br><br>
 
 <?php
 // Display products using mysqli_num_rows and mysqli_fetch_assoc
