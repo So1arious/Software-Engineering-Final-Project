@@ -64,7 +64,7 @@ if (isset($_POST['checkout']) && !empty($_SESSION['cart'])) {
 </head>
 <body>
 
-<a href="index.php">&larr; Back to Shop</a>
+<a href="http://localhost/SE-Final-Project/Backend/shop.php">&larr; Back to Shop</a>
 <h1>Your Shopping Cart</h1>
 
 <?php if ($order_message != "") { echo "<p style='color:green; font-weight:bold;'>$order_message</p>"; } ?>
