@@ -15,7 +15,7 @@ $result = mysqli_query($conn, $sql);
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Music Instrument Shop</title>
+    <title>Solfage Music Shop</title>
     <link rel="stylesheet" href="../Frontend/style.css">
 </head>
 <body>
