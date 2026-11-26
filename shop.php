@@ -2,7 +2,6 @@
 session_start();
 include('connect.php');
 
-
 // Filter by category using $_GET (Lecture: PHP SQL Data Filtering)
 if (isset($_GET['category']) && $_GET['category'] != "") {
     $category = mysqli_real_escape_string($conn, $_GET['category']);
@@ -13,7 +12,6 @@ if (isset($_GET['category']) && $_GET['category'] != "") {
 
 $result = mysqli_query($conn, $sql);
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,8 +20,32 @@ $result = mysqli_query($conn, $sql);
 </head>
 <body>
 
-<a href="../Frontend/shop_page.html">&larr; Back to Home</a>
-<br><br>
+<div class="nav">
+    <a href="shop.php">Shop</a>
+    <a href="cart.php">Cart (<?php echo isset($_SESSION['cart']) ? array_sum($_SESSION['cart']) : 0; ?>)</a>
+    <a href="admin.php">Admin Login</a>
+</div>
+
+<h1>Music Instrument Shop</h1>
+
+<!-- Category Filter Form using $_GET -->
+<form method="GET" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+    Filter by Category:
+    <select name="category">
+        <option value="">All Instruments</option>
+        <option value="Clarinet">Clarinet</option>
+        <option value="Drums">Drums</option>
+        <option value="Flutes">Flutes</option>
+        <option value="Guitars">Guitars</option>
+        <option value="Keyboards">Keyboards</option>
+        <option value="Trumpts">Trumpts</option>
+        <option value="Trombone">Trombone</option>
+        <option value="Saxaphone">Saxaphone</option>
+        <option value="Violin">Violin</option>
+    </select>
+    <input type="submit" value="Filter">
+</form>
+<br>
 
 <?php
 // Display products using mysqli_num_rows and mysqli_fetch_assoc
@@ -57,3 +79,6 @@ mysqli_close($conn);
 
 </body>
 </html>
+
+
+
