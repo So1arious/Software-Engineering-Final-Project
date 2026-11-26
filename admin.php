@@ -69,7 +69,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 </head>
 <body>
 
-<a href="http://localhost/SE-Final-Project/Backend/index.php">&larr; Back to Shop</a>
+<a href="http://localhost/SE-Final-Project/Backend/shop.php">&larr; Back to Shop</a>
 
 <?php if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] == false): ?>
 
